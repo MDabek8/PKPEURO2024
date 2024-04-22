@@ -23,12 +23,14 @@ body {
 
 .ranking {
     width: 200px;
+    height: 50px;
     background-color: #FF5555;
-    margin: 0 auto;;
-    padding: 1px;
+    margin: 0 auto;
+    padding: 10px auto;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-size: 40px;
 }
 
 .ranking:hover {
@@ -74,9 +76,10 @@ body {
 
 .box {
     width: 300px;
-    height: 65px;
+    height: 70px;
     background-color: #4caf50;
     margin: 0 20px;
+    padding: 10px auto;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -121,5 +124,13 @@ a.linkbox {
     text-decoration: none;
     display: block;
     width: 300px;
-    height: 60px;
+    height: 70px;
+}
+
+a.linkranking {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 50px;
 }
