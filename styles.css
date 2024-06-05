@@ -77,7 +77,7 @@ body {
 .box {
     width: 300px;
     height: 70px;
-    background-color: #4caf50;
+    background-color: #FF5555;
     margin: 0 20px;
     padding: 10px auto;
     border: none;
@@ -86,7 +86,39 @@ body {
 }
 
 .box:hover {
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+.boxprzed {
+    width: 300px;
+    height: 70px;
+    background-color: #4caf50;
+    margin: 0 20px;
+    padding: 10px auto;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boxprzed:hover {
     background-color: #66bb6a;
+    cursor: pointer;
+}
+
+.boxpo {
+    width: 300px;
+    height: 70px;
+    background-color: #808080;
+    margin: 0 20px;
+    padding: 10px auto;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boxpo:hover {
+    background-color: #666666;
     cursor: pointer;
 }
 
