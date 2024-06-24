@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA Euro 2024</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function() {
+            const CHECK_INTERVAL = 5000; // Check every 5 seconds
+            let lastModified = document.lastModified;
+
+            function checkForChanges() {
+                fetch(window.location.href, { method: 'HEAD' })
+                    .then(response => {
+                        const newModified = response.headers.get('Last-Modified');
+                        if (newModified && newModified !== lastModified) {
+                            location.reload();
+                        }
+                    })
+                    .catch(err => console.error('Error checking for changes:', err));
+            }
+
+            setInterval(checkForChanges, CHECK_INTERVAL);
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
